@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOKO AI - ذكاء اصطناعي متكامل</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="chat-container">
+        <header>
+            <h1><i class="fas fa-robot"></i> KOKO AI</h1>
+            <div class="typing-indicator" id="typingIndicator">يكتب...</div>
+        </header>
+        
+        <div class="chat-box" id="chatBox">
+            <div class="ai-message">
+                <div class="message-content">
+                    مرحبا! أنا KOKO AI، كيف يمكنني مساعدتك اليوم؟
+                </div>
+            </div>
+        </div>
+        
+        <div class="code-preview" id="codePreview">
+            <div class="code-header">
+                <span>معاينة الكود</span>
+                <button id="copyCode"><i class="far fa-copy"></i> نسخ</button>
+                <button id="runCode"><i class="fas fa-play"></i> تشغيل</button>
+                <button id="closeCode"><i class="fas fa-times"></i> إغلاق</button>
+            </div>
+            <pre id="codeContent"></pre>
+            <iframe id="codeOutput" style="display:none;"></iframe>
+        </div>
+        
+        <div class="input-area">
+            <textarea id="userInput" placeholder="اكتب رسالتك هنا..." rows="1"></textarea>
+            <button id="sendButton"><i class="fas fa-paper-plane"></i></button>
+            <button id="searchButton" title="البحث على الإنترنت"><i class="fas fa-search"></i></button>
+        </div>
+    </div>
+
+    <script src="ai-engine.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
